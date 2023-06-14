@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima', cursive;
+}
+
+section {    /* CONTENIDO del recuadro central de ingresar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('libros.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* CAJA DEL RECUADRO CENTRAL de ingresar */
+.form-box {
+    position: relative;
+    left: 455px;
+    bottom: 10px;
+    width: 500px;
+    height: 550px;
+    background: transparent;
+
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1 {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+h3 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.textbutton {
+    position:absolute;
+    left: 15px;
+    top: 6px;
+    text-decoration: overline;
+    font-size: 18px;
+    color: #fff;
+}
+
+.buttonback {
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+    background-color: transparent;
+    padding: 10px 40px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+  }
+  
+  .botonfacebook{
+    padding: 5px 5px;
+    border: 2px solid #000;
+    border-radius: 100px;
+    font-size: 25px;
+  }
+  .form-boxII {
+    position: relative;
+    width: 1500px;
+    height: 700px;
+    background: transparent;
+
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}    
+
+.difuminado {    /* CONTENIDO del recuadro central de ingresar */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    background: url('imagen3.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box-user {
+    position: absolute;
+    left: 10px;
+    bottom: 550px;
+
+    width: 200px;
+    height: 90px;
+    background:rgb(134, 58, 241);
+
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+
+.navbar {
+    height: 50px; /* Ajusta el valor según sea necesario */
+
+}
+.navbar-shrink {
+    display: none;
+}
+.navbar-shrink .navbar-nav {
+    visibility: hidden;
+}
+.navbar-shrink .navbar-toggler {
+    display: none;
+}
+.navbar-shrink .navbar-brand img {
+    height: 0;
+    opacity: 0;
+}
+.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+} 
+
+
+.button {
+    background-color:  #af4c4c; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid  #af4c4c;
+}
+
+.button1:hover {
+    background-color: #af4c4c;
+    color: white;
+}
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.logotype{    
+    position: relative;
+    left: -500px;
+    bottom: 300px;
+
+    width: 10px;
+    height: 10px;
+    /* background:rgb(134, 58, 241); 
+
+    /* border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+.principalname{
+    position: relative;
+    left: -260px;
+    bottom: 250px;
+
+    width: 10px;
+    height: 10px;
+
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
