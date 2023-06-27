@@ -1,0 +1,62 @@
+
+.navbar {
+    height: 50px; 
+
+}
+.navbar-shrink {
+    display: none;
+}
+.navbar-shrink .navbar-nav {
+    visibility: hidden;
+}
+.navbar-shrink .navbar-toggler {
+    display: none;
+}
+.navbar-shrink .navbar-brand img {
+    height: 0;
+    opacity: 0;
+}
+.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+} 
+
+
+.button {
+    background-color:  #ffffff;
+    border: none;
+    color: rgb(208, 208, 208);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid  #af4c4c;
+}
+
+.button1:hover {
+    background-color: #af4c4c;
+    color: white;
+}
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px;
+    margin-top: 100px;
+}

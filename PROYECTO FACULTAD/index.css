@@ -25,7 +25,8 @@ section {    /* CONTENIDO del recuadro central de ingresar */
     min-height: 100vh;
     width: 100%;
 
-    background: url('libroscompleto.jpg')no-repeat;
+    background: url('libroscompleto.jpg')no-repeat; filter: blur(6px);;
+
     background-position: center;
     background-size: cover;
 
@@ -33,25 +34,26 @@ section {    /* CONTENIDO del recuadro central de ingresar */
 
 /* .difuminadocentral CREAR UNA CLASE DIFUMINADO PARA EL MENU PRINCIPAL */
 
-/* CAJA DEL RECUADRO CENTRAL de ingresar */
+/* box de ingresar */
 .form-box {
     position: relative;
     left: 455px;
     bottom: 10px;
     width: 500px;
     height: 550px;
-    background: transparent;
-
+    background: #5a5959f7;
+    
     border: 5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    
+    border-radius: 15px;
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
     align-items: center;
-
+  
 }
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     text-align: center;
 }
@@ -67,27 +69,28 @@ h3 {
     text-align: center;
 }
 
-.inputbox {
+/* inputs usuario contraseña */
+.inputbox {  
     position: relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 4px solid #a5a2a2;
 }
 
 .inputbox label {
     position: absolute;
     top: 50%;
     left: 5px;
-    transform: translateY(-50%);
+    transform: translateY(-50%);  /* animacion al cargar la pagina */
     color: #ffffff;
-    font-size: 1em;
+    font-size: 1.21em;    /* animacion al clickear en el input*/
     pointer-events: none;
-    transition: .5s;
+    transition: .8s;
 }
-
-input:focus~label,
-input:valid~label {
+/* animacion de subir el campo del input 5px hacia arriba */
+input:focus~label,input:valid~label {
     top: -5px;
+    transition: .5s;
 }
 
 .inputbox input {
@@ -100,12 +103,12 @@ input:valid~label {
     padding: 0 35px 0 5px;
     color: #fff;
 }
-
+/* iconos dentro del input */
 .inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color: #fff;
-    font-size: 1.2em;
+    color: #ffffff;
+    font-size: 1.5em;
     top: 20px;
 }
 
@@ -135,7 +138,7 @@ button {
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background: #ffffff;
+    background: #a0a0a0;
     border: none;
     outline: none;
     cursor: pointer;
@@ -197,11 +200,12 @@ button {
   
   .botonfacebook{
     padding: 5px 5px;
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
     border-radius: 100px;
     font-size: 25px;
   }
-  .form-boxII {
+
+.form-boxII {
     position: relative;
     width: 1500px;
     height: 700px;
@@ -246,8 +250,41 @@ button {
 } 
 
 
+
+.logotype{    
+    position: relative;
+    left: -500px;
+    bottom: 300px;
+
+    width: 10px;
+    height: 10px;
+    /* background:rgb(134, 58, 241); 
+
+    /* border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+.principal-name{
+    position: relative;
+    left: -260px;
+    bottom: 250px;
+
+    width: 10px;
+    height: 10px;
+
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Pagina principal */
+
 .navbar {
-    height: 50px; /* Ajusta el valor según sea necesario */
+    position:absolute;
+    height: 50px; 
 
 }
 .navbar-shrink {
@@ -276,16 +313,16 @@ button {
 
 
 .button {
-    background-color:  #af4c4c; /* Green */
+    background-color:  #ffffff;
     border: none;
-    color: white;
+    color: rgb(208, 208, 208);
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -306,33 +343,4 @@ button {
     max-width: 600px;
     padding: 40px;
     margin-top: 100px;
-}
-
-.logotype{    
-    position: relative;
-    left: -500px;
-    bottom: 300px;
-
-    width: 10px;
-    height: 10px;
-    /* background:rgb(134, 58, 241); 
-
-    /* border: 5px solid rgba(0, 0, 0, 0.5);
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-
-}
-.principalname{
-    position: relative;
-    left: -260px;
-    bottom: 250px;
-
-    width: 10px;
-    height: 10px;
-
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
 }
